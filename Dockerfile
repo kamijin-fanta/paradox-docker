@@ -26,7 +26,7 @@ RUN \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
-  apt-get install -y sbt python3 python3-pip && \
+  apt-get install -y sbt python3 python3-pip rsync && \
   pip3 install awscli
 
 # Install localversion paradox
